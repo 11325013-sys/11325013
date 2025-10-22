@@ -10,7 +10,7 @@ Google Colaboratory，簡稱 Colab，是 Google 提供的一項免費雲端服�
 
 Google Colab 為開發者和研究人員提供了一個極具吸引力的平台，其主要優勢可歸納如下表： 
 
-功能 
+功能 螢幕擷取畫面 2025-10-21 002141.png
 
 詳細說明 
 
