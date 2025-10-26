@@ -53,10 +53,9 @@ Colab 的資源並非無限，而是動態調整的。免費版的使用限制�
 
 步驟一：建立與設定您的 Colab 筆記本
 
-1.
 開啟 Colab：前往 Google Colab 官方網站。
 
-2.
+1.
 建立新筆記本：點擊「檔案」(File) -> 「新增筆記本」(New notebook)。
 <img width="1205" height="718" alt="螢幕擷取畫面 2025-10-26 195333" src="https://github.com/user-attachments/assets/4db1e0bc-097e-4405-bba1-98eca20fbe3f" />
 
