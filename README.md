@@ -15,6 +15,7 @@
 步驟二：掛載 Google Drive 以實現持久化儲存
 
 為了避免因執行階段中斷而遺失工作進度，最佳實踐是將您的 Google Drive 掛載到 Colab 環境中。這樣，您可以直接從 Drive 讀取資料集，並將訓練好的模型權重和日誌儲存回 Drive。
+<img width="409" height="747" alt="螢幕擷取畫面 2025-10-26 200308" src="https://github.com/user-attachments/assets/c46a5c5c-3cbe-4690-b25e-fb0444ccae91" />
 
 在一個新的程式碼儲存格中輸入並執行以下程式碼：
 
