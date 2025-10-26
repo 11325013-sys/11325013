@@ -5,6 +5,7 @@
 
 2.
 建立新筆記本：點擊「檔案」(File) -> 「新增筆記本」(New notebook)。
+<img width="1205" height="718" alt="螢幕擷取畫面 2025-10-26 195333" src="https://github.com/user-attachments/assets/4db1e0bc-097e-4405-bba1-98eca20fbe3f" />
 
 3.
 啟用 GPU：這是關鍵步驟。點擊「執行階段」(Runtime) -> 「變更執行階段類型」(Change runtime type)。在硬體加速器 (Hardware accelerator) 下拉選單中選擇 GPU，然後點擊「儲存」(Save)。
