@@ -50,6 +50,7 @@ Python
 
 <img width="895" height="810" alt="螢幕擷取畫面 2025-10-26 200716" src="https://github.com/user-attachments/assets/2c06980c-d15e-4af7-b280-a3de86bc9427" />
 
+<img width="870" height="647" alt="螢幕擷取畫面 2025-10-26 200735" src="https://github.com/user-attachments/assets/4a6c77f4-a30a-48fb-8bb5-a7cf4bef55a1" />
 
 
 步驟五：監控與最佳化
