@@ -48,64 +48,8 @@ Python
 !pip install tqdm
 
 
-步驟四：編寫與執行模型訓練程式碼
+<img width="895" height="810" alt="螢幕擷取畫面 2025-10-26 200716" src="https://github.com/user-attachments/assets/2c06980c-d15e-4af7-b280-a3de86bc9427" />
 
-現在，您可以像在本地 Jupyter 環境中一樣編寫您的模型定義、資料載入和訓練迴圈。以下是一個使用 TensorFlow/Keras 訓練一個簡單圖像分類模型的範例框架。
-
-Python
-
-
-import tensorflow as tf
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import Conv2D, MaxPooling2D, Flatten, Dense
-from tensorflow.keras.preprocessing.image import ImageDataGenerator
-
-# 設定資料路徑
-base_dir = 'cats_and_dogs_filtered'
-train_dir = f'{base_dir}/train'
-validation_dir = f'{base_dir}/validation'
-
-# 資料增強與產生器
-train_datagen = ImageDataGenerator(rescale=1./255)
-val_datagen = ImageDataGenerator(rescale=1./255)
-
-train_generator = train_datagen.flow_from_directory(
-    train_dir,
-    target_size=(150, 150),
-    batch_size=20,
-    class_mode='binary')
-
-validation_generator = val_datagen.flow_from_directory(
-    validation_dir,
-    target_size=(150, 150),
-    batch_size=20,
-    class_mode='binary')
-
-# 建立模型
-model = Sequential([
-    Conv2D(32, (3, 3), activation='relu', input_shape=(150, 150, 3)),
-    MaxPooling2D(2, 2),
-    Flatten(),
-    Dense(512, activation='relu'),
-    Dense(1, activation='sigmoid')
-])
-
-model.compile(optimizer='adam',
-              loss='binary_crossentropy',
-              metrics=['accuracy'])
-
-# 訓練模型
-history = model.fit(
-    train_generator,
-    steps_per_epoch=100,  # 2000 images = batch_size * steps
-    epochs=15,
-    validation_data=validation_generator,
-    validation_steps=50,  # 1000 images = batch_size * steps
-    verbose=2)
-
-# 將訓練好的模型儲存到 Google Drive
-model.save('/content/drive/My Drive/my_cat_dog_classifier.h5')
-print("模型已成功儲存至您的 Google Drive！")
 
 
 步驟五：監控與最佳化
