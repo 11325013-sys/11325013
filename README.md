@@ -9,6 +9,7 @@
 
 3.
 啟用 GPU：這是關鍵步驟。點擊「執行階段」(Runtime) -> 「變更執行階段類型」(Change runtime type)。在硬體加速器 (Hardware accelerator) 下拉選單中選擇 GPU，然後點擊「儲存」(Save)。
+<img width="617" height="745" alt="螢幕擷取畫面 2025-10-26 195544" src="https://github.com/user-attachments/assets/46ecc608-4618-4c6c-afd9-516a3c951a19" />
 
 步驟二：掛載 Google Drive 以實現持久化儲存
 
